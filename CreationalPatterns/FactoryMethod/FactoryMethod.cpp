@@ -55,13 +55,57 @@ public:
     }
 };
 
+
 int main()
 {
-
-    
-
+    Creator* c1 = new ProductACreator();
+    Product* sb = c1->createProduct();
+    cout << "创建产品A: " << sb->print() << endl;
+    Creator* c11 = new ProductBCreator();
+    Product* sb1 = c11->createProduct();
+    cout << "创建产品A: " << sb->print() << endl;
+    delete c1;
+    delete sb;
+    delete c11;
+    delete sb1;
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
