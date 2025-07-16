@@ -36,6 +36,7 @@ public:
 class WoodFurnitureFactory : public FurnitureFactory
 {
 public:
+    // 还可以添加其他的同类产品，例如木桌等等。
     Chair* createChair() override
     {
         return new WoodChair();
